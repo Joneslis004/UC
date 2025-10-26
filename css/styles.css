@@ -460,30 +460,30 @@ footer {
   color: white;
   text-align: center;
 }
-footer section.contact p {
+footer div.contact p {
   font-size: 1.2rem;
   margin: 0.5rem;
 }
-footer section.contact ion-icon {
+footer div.contact ion-icon {
   color: white;
   padding-right: 10px;
   text-decoration: none;
 }
-footer section.contact a,
-footer section.contact a:link,
-footer section.contact a:visited,
-footer section.contact a:active {
+footer div.contact a,
+footer div.contact a:link,
+footer div.contact a:visited,
+footer div.contact a:active {
   color: white !important;
   text-decoration: none !important;
 }
-footer section.contact a:hover {
+footer div.contact a:hover {
   color: #d3d4d4 !important;
 }
-footer section.social {
+footer div.social {
   display: flex;
   justify-content: center;
 }
-footer section.social a {
+footer div.social a {
   color: white;
   border: 1px solid white;
   border-radius: 50%;
@@ -494,11 +494,11 @@ footer section.social a {
   justify-content: center;
   margin: 0.5rem;
 }
-footer section.social a:hover {
+footer div.social a:hover {
   background-color: #d3d4d4;
   color: #01555e;
 }
-footer section.location {
+footer div.location {
   font-size: 1.5rem;
 }
 footer p.legal {
