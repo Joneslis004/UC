@@ -51,7 +51,7 @@ nav a {
   text-align: center;
 
   &:hover {
-    background-color: darken($secondaryColor, 10%);
+    background-color: color.adjust($secondaryColor, $lightness: -10%);
   }
 }
 .active a {
