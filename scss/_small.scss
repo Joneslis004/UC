@@ -1,0 +1,231 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*  Apply a natural box layout model to all elements  */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+} // end all elements
+
+
+/* --------------------------- BODY --------------------------- */
+body {
+    font-family: $defaultFont;
+    background-color: $secondaryColor;
+    font-weight: $lightWeight;
+    min-width: 320px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+/* --------------------------- HEADER --------------------------- */
+#headerWrapper {
+    background: $primaryColor;
+
+}
+header {
+    display: grid;
+    grid-template-columns: 50px auto;
+    column-gap: $gutter;
+    align-items: center; 
+    padding: .5rem $gutter;
+    span {
+        font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    }
+} // end header
+
+
+/* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
+
+nav {
+    background-color: $primaryColor;
+    width: 100vw;
+}
+
+#myButton::before {
+    content: "\2630";
+}
+
+#myButton {
+    border: none;
+    background: none;
+    color: white;
+    font-size: 2.2rem;
+    padding: 0;
+    width: 44px;
+    height: 44px;
+    font-weight: $lightWeight;
+    cursor: pointer;
+}
+
+ul.menuLinks {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+li a {
+    color: #fff;
+    display: block;
+    padding: .75rem $gutter;
+    text-decoration: none;
+}
+ li a:hover {
+    background-color: $highlightColor;
+  }
+li.active a {
+    background-color: rgba(255,255,255,0.2);
+}
+}
+
+ul.open.menuLinks {
+    display: block;
+}
+#myButton.open::before {
+    content: "x";
+}
+
+
+/* --------------------------- MAIN --------------------------- */
+main {
+     h1 {
+    padding: 1.5rem $gutter 0.5rem $gutter;
+    font-size: 2.2rem;
+    color: $primaryColor;
+    text-align: center;
+    font-weight: 600;
+  }
+     p {
+    padding: 0.5rem $gutter;
+    color: $accentColor;
+    line-height: $leading;
+  }
+}
+// end main
+
+div.allcards {
+    padding: 0 $gutter;
+    section {
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 1.5rem 0;
+    background-color: white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+        h2, p, img,{
+            margin: 0;
+            padding: 1rem $gutter;
+        }
+        h2 {
+           background-color: $primaryColor;
+      color: white;
+      font-size: 1.8rem;
+      text-align: center;
+      padding: 0.75rem;
+    }
+        }
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        img.e2e {
+            padding: 0;
+        }
+        p {
+           font-style: italic;
+      padding: 1rem;
+      color: $accentColor;
+
+        }
+        a {
+            display: block;
+      background-color: $highlightColor;
+      padding: 0.75rem;
+      text-align: center;
+      margin: 0 3rem 1rem 3rem;
+      border-radius: 8px;
+      color: $accentColor;
+      font-weight: bold;
+      text-decoration: none;
+    }
+}
+// end allcards
+
+/* --------------------------- FOOTER --------------------------- */
+#footerWrapper {
+    background-color: $primaryColor;
+} // end footer wrapper
+
+footer {
+    padding: 1.5rem $gutter;
+  color: white;
+  text-align: center;
+
+    section.contact {
+        p{font-size: 1.2rem; margin: .5rem;}
+        ion-icon{color: white; padding-right: 10px; text-decoration: none;}
+          a,
+        a:link,
+        a:visited,
+        a:active {
+            color: white !important;
+            text-decoration: none !important;
+        }
+        a:hover {
+            color: $highlightColor !important;
+        }
+    }
+
+    section.social {
+        display: flex;
+    justify-content: center;
+    
+        a {
+              color: white;
+      border: 1px solid white;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0.5rem;
+        }
+        a:hover {
+           background-color: $highlightColor;
+      color: $accentColor;
+        }
+    }
+    section.location {
+        font-size: 1.5rem;
+    }
+
+    p.legal {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+       a,
+        a:link,
+        a:visited,
+        a:active {
+            color: white !important;
+            text-decoration: none !important;
+        }
+
+        a:hover {
+            color: $highlightColor !important;
+        }
+ }
+}
+
+
+
+
+
+// end footer
