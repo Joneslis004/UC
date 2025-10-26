@@ -1,123 +1,99 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-	<meta charset="utf-8">
-	<title>Reds Diner</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.min.css">
+  <meta charset="utf-8">
+  <title>Uintah Architecture</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
 
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- Compiled CSS -->
+  <link rel="stylesheet" href="css/styles.min.css">
 </head>
 
 <body>
-<div id="headerWrapper">
-	<header>
-        <img 
-  src="images/logo.png"
-  srcset="images/logo.png 1x, images/logo2x.png 2x, images/logo3x.png 3x"
-  alt="Company Logo"
-  width="50"
-  height="50">
-		<span>Reds Diner</span>
-	</header>
-</div><!-- end header wrapper -->
+  <header id="headerWrapper">
+    <img 
+    src="images/logo1x.png" 
+    srcset="images/logo2x.png 2x, images/logo3x.png 3x" 
+    width="50" 
+    height="50" 
+    alt="Company Logo">
+    <span>Uintah Architecture</span>
+  </header>
 
-    
-    
-<div id="navWrapper">
-    <nav>
-        <button id="myButton"></button>
-        <ul class="menuLinks">
-            <li><a href="#">Our Kitchen</a></li>
-            <li><a href="#">Catering</a></li>
-            <li class="active"><a href="#">Menu</a></li>
-            <li><a href="#">Reservations</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-</div> <!-- end nav wrapper -->
+  <nav id="navWrapper" aria-label="Main navigation">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Projects</a></li>
+      <li class="active"><a href="#">About</a></li>
+    </ul>
+  </nav>
 
-<div id="mainWrapper">
-    <main>
-            <h1>Menu</h1>
-            <div class="allcards">
-                <section>
-                    <h2>Entrees</h2>
-                    <img src="images/diner1.png" alt="Entrees" width="300" height="200">
-                    <p>Satisfying main dishes made fresh with classic diner flavor.</p>
-                    <a href="#">Learn More</a>
-                </section>
+  <main id="mainWrapper" class="main-content">
 
-                <section>
-                    <h2>Breakfast</h2>
-                    <img src="images/diner2.png" alt="Breakfast" width="300" height="200">
-                    <p>Hearty morning favorites served all day long.</p>
-                    <a href="#">Learn More</a>
-                </section>
+    <!-- Hero: responsive pictures with art direction -->
+    <section class="hero" aria-label="Main hero">
+      <picture>
+        <!-- large (1500px) -->
+        <source media="(min-width:1025px)" srcset="images/hero-large.png" type="image/png">
+
+        <!-- medium (1000px) -->
+        <source media="(min-width:600px)" srcset="images/hero-medium.png" type="image/png">
+
+        <!-- small (500px) -->
+        <source media="(max-width:599px)" srcset="images/hero-small.png" type="image/png">
+        <img src="images/hero-small.png" alt="Exterior shot of a modern architecture project" loading="lazy">
+      </picture>
+    </section>
 
 
-                <section>
-                    <h2>Appetizers</h2>
-                    <img src="images/diner3.png" alt="Appetizers" width="300" height="200">
-                    <p>Tasty starters to kick off your dining experience.</p>
-                    <a href="#">Learn More</a>
-                </section>
+    <section class="hero-video">
+      <h2 id="video-heading">Company introduction video</h2>
+
+      <video controls>
+        <source src="media/trimmed_hb.webm" type="video/webm">
+        <source src="media/trimmed_hb.mp4" type="video/mp4">
+        <track
+        label="English"
+        kind="subtitles"
+        srclang="en"
+        src="media/lisette-en.vtt"
+        default />
+
+         <track
+        label="Español"
+        kind="subtitles"
+        srclang="es"
+        src="media/lisette-es.vtt"/>
+</video>
+ </section>
+<details>
+  <summary>Video Transcript</summary>
+    <p>Hi everyone and welcome to UN Architecture. I wanted to talk a little bit about what we do here at UN Architecture and what kind of sets us apart 
+      from other architecture businesses. 
+      <p>Um we combine a lot of modern design with um with our natural surroundings. So we use a lot of what is already there,
+       hills, um wood kind we kind of build it into the natural surroundings. Um we like to use a very
+
+energy efficient and environmentally friendly style of design. Um, we want it to be super functional and super beautiful and just kind of make sure that it's everything that our client wants
+. We build it specifically to your needs and um, we are very client-based, so we want it to be perfect for our clients. And yeah, that's a little bit about</p>
+</details>
 
 
-                <section>
-                    <h2>Drinks</h2>
-                    <img src="images/diner4.png" alt="Drinks" width="300" height="200">
-                    <p>Refreshing sodas, shakes, and coffee served just right.</p>
-                    <a href="#">Learn More</a>
-                </section>
 
+  </main>
 
-                <section>
-                    <h2>Desserts</h2>
-                    <img src="images/diner5.png" alt="Dessert" width="300" height="200">
-                    <p>Sweet treats that bring a perfect ending to your meal.</p>
-                    <a href="#">Learn More</a>
-                </section>
-
-
-            </div>
-     
-
-    </main>
-</div><!-- end main wrapper -->
-    
-<div id="footerWrapper">
-    <footer>
-        <div>
-            <div class="contact">
-                <p><ion-icon name="person-outline"></ion-icon>Chef Gusteau</p>
-                <p><ion-icon name="home-outline"></ion-icon>Reds Diner</p>
-                <p><ion-icon name="mail-open-outline"></ion-icon><a href="mailto:redsdiner@gmail.com">redsdiner@gmail.com</a></p>
-                <p><ion-icon name="globe-outline"></ion-icon><a href="https://redsdiner.com">redsdiner.com</a></p>
-                <p><ion-icon name="call-outline"></ion-icon><a href="tel:1234567890">123 456 7890</a></p>
-            </div>
-            <div class="social">
-                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-                <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
-                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-                <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
-            </div>
-            <div class="location">
-                <address>Orem, Utah <br> 1234 Boulevard <br> United States of America</address>
-            </div>
-        </div>
-        <p class="legal">&copy; 2025 Lisette Jones 
-            <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Clients</a></p>
-    </footer>
-</div> <!-- end footer wrapper -->
-   <script src="js/scripts.js"></script>
-   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <footer id="footerWrapper">
+    <p>
+      &copy; <time datetime="2025">2025</time> • Uintah Architecture • All rights reserved •
+      <a href="#">Privacy Policy</a> • <a href="#">Terms of Use</a> • <a href="#">Clients</a>
+    </p>
+  </footer>
 </body>
-</html> 
+</html>

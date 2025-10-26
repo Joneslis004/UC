@@ -1,43 +1,20 @@
-header, nav, main {
-    max-width: 960px;
-    margin: auto;
-}
-
-/* NAVIGATION STUFF GOES HERE  */
- #navWrapper {
-    background-color: $primaryColor; /* full-width background */
-    padding: 0;                       /* remove extra padding if any */
+@media (min-width: 1025px) {
+  header {
+    padding: 1rem 3rem;
   }
 
-  nav {
-    max-width: 1200px;       /* keep nav content aligned */
-    margin: 0 auto;          /* center nav inside wrapper */
-    display: flex;
-    justify-content: flex-end; /* or space-evenly */
-    align-items: center;
-  }
-
-#myButton {
-    display: none;
-}
-ul.menuLinks li a {
-    padding: .4rem 1rem;
-}
-ul.menuLinks, ul.menuLinks.open {
-    display: flex;
+  nav ul {
     justify-content: flex-end;
-}
-ul.menuLinks a:hover {
-    background-color: $secondaryColor;
-}
+    padding-right: 3rem;
+  }
 
-div.allcards {
-    section {
-        flex-basis: calc(33.3333% - (($gutter*2)/3))
-    }
-}
+  .hero .hero-caption {
+    width: 40%;
+    bottom: 20%;
+  }
 
-footer div {
-    display: grid;
-    grid-template-columns: auto auto auto;
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem 3rem;
+  }
 }
